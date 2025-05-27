@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Industrial Manager - Production Data Entry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.2rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Industrial Manager</h1>
+  <form>
+    <label for="shift">Shift:</label>
+    <select id="shift" name="shift">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+
+    <label for="operatorName">Operator Name:</label>
+    <input type="text" id="operatorName" name="operatorName" required>
+
+    <label for="machineCode">Machine Code:</label>
+    <input type="text" id="machineCode" name="machineCode" required>
+
+    <label for="component">Component Name:</label>
+    <input type="text" id="component" name="component" required>
+
+    <label for="quantity">Quantity Produced:</label>
+    <input type="number" id="quantity" name="quantity" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
